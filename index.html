@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script>
+    function images(){
+        return document.getElementById('container').style.backgroundImage= "url(./images/austria.jpg)";
+    }
+</script>
 </head>
+
 <body>
-    <h1> Welcome</h1>
+    <div>
+        <ul>
+            <li data-index='0' class="active"></li>
+            <li data-index='1'></li>
+            <li data-index='2'></li>
+            <li data-index='3'></li>
+            <li data-index='4'></li>
+            <li data-index='5'></li>
+            <li data-index='6'></li>
+        </ul>
+        <canvas width="1690" height="768">
+        <canvas width="1690" height="768">
+        <canvas width="1690" height="768">
+        <canvas width="1690" height="768">
+        <canvas width="1690" height="768">
+        <canvas width="1690" height="768">
+    </div>
+    <div>
+        <div></div>
+    </div>
+    <div class="page-home-container">   
+        <div id="container" class="gallery-container">
+            <div class="gallery">
+                <a id="mi_imagen" class="move" href="#" onclick = "document.getElementById('container').style.backgroundImage= 'url(./images/australia.jpg)';"  style="text-decoration:none" data-index="0"> Austria</a>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="120px" height="120px" viewBox="0 0 120 120" enable-background="new 0 0 120 120" xml:space="preserve">
+                    <g class="letter letter-i">
+                        <path class="path" fill="transparent" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" d="M103.33,84.966 c-8.646,14.941-24.802,24.994-43.307,24.994c-18.503,0-34.658-10.051-43.305-24.99" style="animation: dash 3s ease-in-out 100ms alternate forwards;"></path>
+                        <path class="path" fill="transparent" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" d="M16.712,34.961 C25.357,20.016,41.516,9.96,60.023,9.96c18.51,0,34.67,10.058,43.314,25.006" style="animation: dash 3s ease-in-out 200ms alternate forwards;"></path>
+                        <line class="path" fill="transparent" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" x1="60.023" y1="9.96" x2="60.023" y2="109.96" style="animation: dash 3s ease-in-out 300ms alternate forwards;"></line>
+                        <text x="20" y="50" style="font-size: 40px" class="texto">relleno rojo</text>
+                    </g>
+                </svg>
+            </div>
+            <div class="gallery">
+                    <a class="move" href="#" onclick = "document.getElementById('container').style.backgroundImage= 'url(./images/australia.jpg)';" style="text-decoration:none" data-index="1"> Australia</a>
+                    <input type="button" onclick="location.href='http://google.com';" value="ver" />
+            </div>
+            <div class="gallery">
+                    <a class="move" href="#" onclick = "document.getElementById('container').style.backgroundImage= 'url(./images/austria.jpg)';" style="text-decoration:none" data-index="2"> Austria</a>
+                    <input type="button" onclick="location.href='http://google.com';" value="ver" />
+            </div>
+            <div class="gallery active">
+                    <a class="move" href="#" onclick = "document.getElementById('container').style.backgroundImage= 'url(./images/austria.jpg)';" style="text-decoration:none" data-index="3"> Austria</a>
+                    <input type="button" onclick="location.href='http://google.com';" value="ver" />
+                </div>
+            <div class="gallery">
+                <a class="move" href="#" onclick = "document.getElementById('container').style.backgroundImage= 'url(./images/austria.jpg)';" style="text-decoration:none" data-index="4"> Austria</a>
+                <input type="button" onclick="location.href='http://google.com';" value="ver" />
+            </div>
+            <div class="gallery">
+                <a class="move" href="#" onclick = "document.getElementById('container').style.backgroundImage= 'url(./images/austria.jpg)';" style="text-decoration:none" data-index="5"> Austria</a>
+                <input type="button" onclick="location.href='http://google.com';" value="ver" />
+            </div>
+            <div class="gallery">
+                <a class="move" href="#" onclick = "document.getElementById('container').tyle.backgroundImage= 'url(./images/austria.jpg)';" style="text-decoration:none" data-index="6"> Austria</a>
+                <input type="button" onclick="location.href='http://google.com';" value="ver" />
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
