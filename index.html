@@ -8,14 +8,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
     <script>
-    function images(){
-        return document.getElementById('container').style.backgroundImage= "url(./images/austria.jpg)";
+    function imagen(elem, src){
+        document.getElementById(elem).style.backgroundImage= src;
+
     }
 </script>
 </head>
 
 <body>
-    <div>
+    <!--<div>
         <ul>
             <li data-index='0' class="active"></li>
             <li data-index='1'></li>
@@ -31,26 +32,40 @@
         <canvas width="1690" height="768">
         <canvas width="1690" height="768">
         <canvas width="1690" height="768">
-    </div>
-    <div>
-        <div></div>
-    </div>
-    <div class="page-home-container">   
+    </div> !-->
+
+    <div class="page-home-container">
+        <div class="svg-container">
+            <div class="svg">
+               
+            </div>
+
+            <div class="svg">
+                    
+            </div>
+
+        </div>   
         <div id="container" class="gallery-container">
             <div class="gallery">
-                <a id="mi_imagen" class="move" href="#" onclick = "document.getElementById('container').style.backgroundImage= 'url(./images/australia.jpg)';"  style="text-decoration:none" data-index="0"> Austria</a>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="120px" height="120px" viewBox="0 0 120 120" enable-background="new 0 0 120 120" xml:space="preserve">
+                <a class="move" href="#" style="text-decoration:none" data-index="0" onclick = "imagen('container','url(./images/australia.jpg)' )"> Austria</a>
+    
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="120px" height="120px" viewBox="0 0 120 120" enable-background="new 0 0 120 120" xml:space="preserve">
+        <g class="letter letter-l">
+            <path class="path" fill="transparent" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" d="M9.861,60.247 c0-22.646,15.055-41.776,35.703-47.926l-0.002,95.852c4.531,1.35,9.33,2.074,14.298,2.074c27.613,0,50-22.385,50-50" style="animation: dash 3s ease-in-out 0ms alternate forwards;"></path>
+        </g>
+            </div>
+            <div class="gallery">
+                    <a class="move" href="#" onclick = "document.getElementById('container').style.backgroundImage= 'url(./images/australia.jpg)';" style="text-decoration:none" data-index="1"> Australia</a>
+                        </svg>
+
+                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="120px" height="120px" viewBox="0 0 120 120" enable-background="new 0 0 120 120" xml:space="preserve">
                     <g class="letter letter-i">
                         <path class="path" fill="transparent" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" d="M103.33,84.966 c-8.646,14.941-24.802,24.994-43.307,24.994c-18.503,0-34.658-10.051-43.305-24.99" style="animation: dash 3s ease-in-out 100ms alternate forwards;"></path>
                         <path class="path" fill="transparent" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" d="M16.712,34.961 C25.357,20.016,41.516,9.96,60.023,9.96c18.51,0,34.67,10.058,43.314,25.006" style="animation: dash 3s ease-in-out 200ms alternate forwards;"></path>
                         <line class="path" fill="transparent" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" x1="60.023" y1="9.96" x2="60.023" y2="109.96" style="animation: dash 3s ease-in-out 300ms alternate forwards;"></line>
-                        <text x="20" y="50" style="font-size: 40px" class="texto">relleno rojo</text>
+                
                     </g>
-                </svg>
-            </div>
-            <div class="gallery">
-                    <a class="move" href="#" onclick = "document.getElementById('container').style.backgroundImage= 'url(./images/australia.jpg)';" style="text-decoration:none" data-index="1"> Australia</a>
-                    <input type="button" onclick="location.href='http://google.com';" value="ver" />
+                </svg>  
             </div>
             <div class="gallery">
                     <a class="move" href="#" onclick = "document.getElementById('container').style.backgroundImage= 'url(./images/austria.jpg)';" style="text-decoration:none" data-index="2"> Austria</a>
