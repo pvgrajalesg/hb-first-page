@@ -7,12 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
-    <script>
-    function imagen(elem, src){
-        document.getElementById(elem).style.backgroundImage= src;
-
-    }
-</script>
+    <script type="text/javascript" src="./javascript/scripts.js"></script>
 </head>
 
 <body>
@@ -32,61 +27,91 @@
         <canvas width="1690" height="768">
         <canvas width="1690" height="768">
         <canvas width="1690" height="768">
-    </div> !-->
+        </div> !-->
 
-    <div class="page-home-container">
-        <div class="svg-container">
-            <div class="svg">
-               
-            </div>
-
-            <div class="svg">
-                    
-            </div>
-
-        </div>   
-        <div id="container" class="gallery-container">
-            <div class="gallery">
-                <a class="move" href="#" style="text-decoration:none" data-index="0" onclick = "imagen('container','url(./images/australia.jpg)' )"> Austria</a>
-    
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="120px" height="120px" viewBox="0 0 120 120" enable-background="new 0 0 120 120" xml:space="preserve">
-        <g class="letter letter-l">
-            <path class="path" fill="transparent" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" d="M9.861,60.247 c0-22.646,15.055-41.776,35.703-47.926l-0.002,95.852c4.531,1.35,9.33,2.074,14.298,2.074c27.613,0,50-22.385,50-50" style="animation: dash 3s ease-in-out 0ms alternate forwards;"></path>
-        </g>
-            </div>
-            <div class="gallery">
-                    <a class="move" href="#" onclick = "document.getElementById('container').style.backgroundImage= 'url(./images/australia.jpg)';" style="text-decoration:none" data-index="1"> Australia</a>
-                        </svg>
-
-                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="120px" height="120px" viewBox="0 0 120 120" enable-background="new 0 0 120 120" xml:space="preserve">
-                    <g class="letter letter-i">
-                        <path class="path" fill="transparent" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" d="M103.33,84.966 c-8.646,14.941-24.802,24.994-43.307,24.994c-18.503,0-34.658-10.051-43.305-24.99" style="animation: dash 3s ease-in-out 100ms alternate forwards;"></path>
-                        <path class="path" fill="transparent" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" d="M16.712,34.961 C25.357,20.016,41.516,9.96,60.023,9.96c18.51,0,34.67,10.058,43.314,25.006" style="animation: dash 3s ease-in-out 200ms alternate forwards;"></path>
-                        <line class="path" fill="transparent" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" x1="60.023" y1="9.96" x2="60.023" y2="109.96" style="animation: dash 3s ease-in-out 300ms alternate forwards;"></line>
+    <div id="container" class="gallery-container">
+        <div class="gallery">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+                <g class="letter letter-l">
+                    <a class="move" href="#" data-index="0" onclick = "imagen('container','url(./images/imagen7.jpg)' )">
+                        <path class="path" d="M9.861,60.247 c0-22.646,15.055-41.776,35.703-47.926l-0.002,95.852c4.531,1.35,9.33,2.074,14.298,2.074c27.613,0,50-22.385,50-50" style="animation: dash 3s ease-in-out 0ms alternate forwards;"></path>
+                        <text x="10" y="25" class="text">Austria</text>
+                    </a>
+                </g>
+            </svg>
+            <input type="button" onclick="location.href='reviewPlace.html';" value="ver" />
+        </div>
+        <div class="gallery">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+                <g class="letter letter-i">
+                    <a class="move" href="#" data-index="1" onclick = "imagen('container','url(./images/imagen1.jpg)' )">
                 
-                    </g>
-                </svg>  
-            </div>
-            <div class="gallery">
-                    <a class="move" href="#" onclick = "document.getElementById('container').style.backgroundImage= 'url(./images/austria.jpg)';" style="text-decoration:none" data-index="2"> Austria</a>
-                    <input type="button" onclick="location.href='http://google.com';" value="ver" />
-            </div>
-            <div class="gallery active">
-                    <a class="move" href="#" onclick = "document.getElementById('container').style.backgroundImage= 'url(./images/austria.jpg)';" style="text-decoration:none" data-index="3"> Austria</a>
-                    <input type="button" onclick="location.href='http://google.com';" value="ver" />
-                </div>
-            <div class="gallery">
-                <a class="move" href="#" onclick = "document.getElementById('container').style.backgroundImage= 'url(./images/austria.jpg)';" style="text-decoration:none" data-index="4"> Austria</a>
-                <input type="button" onclick="location.href='http://google.com';" value="ver" />
-            </div>
-            <div class="gallery">
-                <a class="move" href="#" onclick = "document.getElementById('container').style.backgroundImage= 'url(./images/austria.jpg)';" style="text-decoration:none" data-index="5"> Austria</a>
-                <input type="button" onclick="location.href='http://google.com';" value="ver" />
-            </div>
-            <div class="gallery">
-                <a class="move" href="#" onclick = "document.getElementById('container').tyle.backgroundImage= 'url(./images/austria.jpg)';" style="text-decoration:none" data-index="6"> Austria</a>
-                <input type="button" onclick="location.href='http://google.com';" value="ver" />
-            </div>
+                        <path class="path" d="M103.33,84.966 c-8.646,14.941-24.802,24.994-43.307,24.994c-18.503,0-34.658-10.051-43.305-24.99" style="animation: dash 3s ease-in-out 100ms alternate forwards;"></path>
+                        <path class="path" d="M16.712,34.961 C25.357,20.016,41.516,9.96,60.023,9.96c18.51,0,34.67,10.058,43.314,25.006" style="animation: dash 3s ease-in-out 200ms alternate forwards;"></path>
+                        <line class="path" x1="60.023" y1="9.96" x2="60.023" y2="109.96" style="animation: dash 3s ease-in-out 300ms alternate forwards;"></line>
+                        <text x="10" y="25" class="text">Australia</text>
+                    </a>
+                </g>
+            </svg>  
+            <input type="button" onclick="location.href='reviewPlace.html';" value="ver" />
+        </div>
+        <div class="gallery">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+                <g class="letter letter-v">
+                    <a class="move" href="#" data-index="2" onclick = "imagen('container','url(./images/imagen2.jpg)' )" > 
+                        <path class="path" d="M32.044,18.785C18.744,27.771,10,42.987,10,60.246 c0,27.613,22.385,50,50,50c10.08,0,19.464-2.982,27.316-8.115l-0.013-83.777C100.969,27.278,110,42.708,110,60.246" style="animation: dash 3s ease-in-out 400ms alternate forwards;"></path>
+                        <text x="10" y="25" class="text">Austria</text>
+                    </a>
+                </g>
+            </svg>
+            <input type="button" onclick="location.href='reviewPlace.html';" value="ver" />
+        </div>
+        <div class="gallery active">       
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+                <g class="letter letter-linea">
+                    <a class="move" href="#" data-index="3" onclick = "imagen('container','url(./images/imagen3.jpg)' )" > 
+                        <line class="path" x1="59.882" y1="60.285" x2="95.521" y2="24.645" style="animation: dash 3s ease-in-out 500ms alternate forwards;"></line>
+                        <line class="path" x1="59.882" y1="60.285" x2="24.645" y2="95.521" data-anti-delay="100" style="animation: dash 3s ease-in-out 500ms alternate forwards;"></line>
+                        <text x="10" y="25" class="text"> Austria</text>
+                    </a>
+                </g>
+            </svg>  
+            <input type="button" onclick="location.href='reviewPlace.html';" value="ver" />
+        </div>
+        <div class="gallery">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+                <g class="letter letter-i-01">
+                    <a class="move" href="#" data-index="4" onclick = "imagen('container','url(./images/imagen4.jpg)' )" > 
+                        <path class="path" d="M103.33,84.966 c-8.646,14.941-24.802,24.994-43.307,24.994c-18.503,0-34.658-10.051-43.305-24.99" style="animation: dash 3s ease-in-out 700ms alternate forwards;"></path>
+                        <path class="path" d="M16.712,34.961 C25.357,20.016,41.516,9.96,60.023,9.96c18.51,0,34.67,10.058,43.314,25.006" style="animation: dash 3s ease-in-out 800ms alternate forwards;"></path>
+                        <line class="path" x1="60.023" y1="9.96" x2="60.023" y2="109.96" style="animation: dash 3s ease-in-out 900ms alternate forwards;"></line>
+                        <text x="10" y="25" class="text">Austria</text>
+                    </a>
+                </g>
+            </svg>
+            <input type="button" onclick="location.href='reviewPlace.html';" value="ver" />
+        </div>
+        <div class="gallery">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+                <g class="letter letter-n">
+                    <a class="move" href="#" data-index="5" onclick = "imagen('container','url(./images/imagen5.jpg)' )" >
+                        <path class="path" d="M74.138,108.201 c-16.996,5.012-36.131,0.813-49.543-12.6c-19.526-19.526-19.526-51.184,0-70.711l70.711,70.711 c19.525-19.525,19.526-51.185,0-70.711C81.869,11.454,62.688,7.264,45.668,12.319" style="animation: dash 3s ease-in-out 1000ms alternate forwards;"></path>
+                        <text x="10" y="25" class="text">Austria</text>
+                    </a>
+                </g>
+            </svg>
+            <input type="button" onclick="location.href='reviewPlace.html';" value="ver" />
+        </div>
+        <div class="gallery">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+                <g class="letter letter-t">
+                    <a class="move" href="#" data-index="6" onclick = "imagen('container','url(./images/imagen6.jpg)' )" > 
+                        <path class="path" d="M59.462,10.246c-27.615,0-50,22.386-50,50 s22.385,50,50,50c18.539,0,34.723-10.09,43.356-25.08c4.227-7.336,6.644-15.846,6.644-24.92H59.838" style="animation: dash 3s ease-in-out 1100ms alternate forwards;"></path>
+                        <text x="10" y="25" class="text"> Austria</text>
+                    </a>
+                </g>
+            </svg>
+            <input type="button" onclick="location.href='reviewPlace.html';" value="ver" />
         </div>
     </div>
 </body>

@@ -1,0 +1,11 @@
+@mixin small-screen{
+	@media (max-width:$small-screen){
+    	@content;
+	}
+}
+
+@mixin contenido{
+	a::before {
+  		content: attr(data-index);
+	}
+}
